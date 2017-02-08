@@ -1,0 +1,8 @@
+<h2> name,title,character </h2>
+<ul>
+<% @names_titles_characters.each do |name_title_character| %>
+<li><%= name_title_character["name"] %>
+    <a href= "/movies/<%= name_title_character["id"] %>"><%= name_title_character["title"] %></a>
+    <%= name_title_character["character"] %></li>
+    <% end %>
+</ul>

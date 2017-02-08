@@ -1,0 +1,7 @@
+<ul>
+<% @movie.each do |movie| %>
+<li><%= movie["title"] %> <%= movie["year"] %> <%= movie["rating"] %>
+<%= movie["genre"] %> <%= movie["studio"] %>
+<a href='/actors/1']> <%= movie["actor"] %></a>
+<%= movie["character"]%></li>
+<% end %>
